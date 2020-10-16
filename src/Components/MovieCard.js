@@ -1,7 +1,8 @@
 import React from "react";
 import RateMovie from "./RateMovie";
+import {Link} from "react-router-dom";
 
-const MovieCard = ({ movie: { title, description, posterurl,rate } }) => {
+const MovieCard = ({ movie: { id, title, description, posterurl,rate, trailer} }) => {
   return (
     <div className="container">
       <div>
@@ -11,9 +12,13 @@ const MovieCard = ({ movie: { title, description, posterurl,rate } }) => {
         <h2>{title}</h2>
         <RateMovie rate={rate} />
         <p >{description}</p>
+        <div>
+        {/* Router */}
+        <Link to={`/${id}`}> <a href="#" className="btn btn-secondary btn-lg active" role="button" aria-pressed="true">More information</a></Link>
+           {/* <Button variant="light" className="btinfo">More information</Button></Link> */}
+        </div>
       </div>
     </div>
   );
 };
-
 export default MovieCard;

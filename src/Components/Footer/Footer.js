@@ -1,9 +1,6 @@
 import React from "react";
 import "./Footer.css"
 
-
-
-
 function Footer () {
 
 return (
@@ -24,7 +21,7 @@ return (
 				
 					<a href="#">About</a>
 					
-					<a href="#">Faq</a>
+					<a href="#">Que</a>
 					
 					<a href="#">Contact</a>
 				</p>
@@ -36,12 +33,12 @@ return (
 
 				<div>
 					<i className="fa fa-map-marker"></i>
-					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+					<p><span>444 S. Cedros Ave</span> California</p>
 				</div>
 
 				<div>
 					<i className="fa fa-phone"></i>
-					<p>+1.555.555.5555</p>
+					<p>+1.000.025.5555</p>
 				</div>
 
 				<div>

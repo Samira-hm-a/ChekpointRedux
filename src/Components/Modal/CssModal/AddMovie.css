@@ -58,16 +58,15 @@
     display: block;
     justify-content: center;
     align-content: center;
-    margin-left: 60px;
+    margin-left: 65px;
   }
   
   h3 {
-    margin-left:200px;
+    margin-left:183px;
     padding: 20px;
     font-family: "'Montserrat'";
-    color: #323232;
+    color: white;
     align-content: center;
-    /* color: white; */
     font-size:22px;
   }
   input {
@@ -87,7 +86,7 @@
   }
   /*Anim input*/
   
-  button {
+  .btr {
     margin: 20px;
     padding:15px;
     border-radius: 5px;
@@ -106,8 +105,8 @@
   }
 
 /*Animation button */
-button:hover {background-color: #323232}
-button:active {
+.btr:hover {background-color: #323232}
+.btr:active {
   transform: translateY(3px);
 }
 

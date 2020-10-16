@@ -64,8 +64,8 @@ const AddMovie = ({ adding }) => {
             onChange={(e) => setDescription(e.target.value)}
           />
           <RateMovie  rate={rate} setRateMovie={setRate} />
-          <button onClick={addMovie}>Submit</button>
-          <button onClick={closeModal}>Cancel</button>
+          <button className="btr" onClick={addMovie}>Submit</button>
+          <button className="btr" onClick={closeModal}>Cancel</button>
         </form>
       </Modal>
     </div>

@@ -66,6 +66,12 @@ html, body {
 .moviedetails p {
   line-height: 1.4;
 }
+/*router*/
+.btn-secondary {
+  color: rgb(167, 27, 27); 
+  margin-left:26px;
+}
+
 /*  css for List Movies component */
 
 /*  css for Search Movie component */
@@ -120,9 +126,31 @@ html, body {
   padding:0%;
 }
 
+/*css for Movie Trailer*/
+.movietrl {
+  text-align: center;
+  background-color: black;
+}
+.movietrldetail {
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-right:160px;
+}
+.moviedetails h3 {
+  /* justify-content: center; */
+  color: rgb(167, 27, 27);
+}
+.movietrldetail p {
+  justify-content: space-evenly;
 
-/*css for Footer component */
-
+}
+.material-icons {
+  /* justify-content: center; */
+  color: rgb(167, 27, 27);
+  margin-left: 15%;
+}
+/*btr design css addmovie*/
 
 /*****/
 /*Responsive Design*/
