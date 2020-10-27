@@ -1,25 +1,27 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { setTodoListFilter } from './actions/action';
+import React from "react";
+import { connect } from "react-redux";
+import { setTodoListFilter } from "./actions/action";
 
 const mapStateToProps = (state, ownProps) => ({
-    active: ownProps.filter === state.todolistFilter
+  active: ownProps.filter === state.todolistFilter,
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-    onClick: () => dispatch(setTodoListFilter(ownProps.filter))
-})
+  onClick: () => dispatch(setTodoListFilter(ownProps.filter)),
+});
 
-const FilterLink = ({active, children, onClick}) => {
-    return (
-        <button
-            onClick ={onClick}
-            disabled={active}
-            style={{marginLeft:'4px'}}
-        >
-            {children}
-        </button>
-    )
-}
+const FilterLink = ({ active, children, onClick }) => {
+  return (
+    <button
+      className="btn"
+      onClick={onClick}
+      disabled={active}
+      style={{ marginLeft: "4px" }}
+    >
+      {" "}
+      {children}
+    </button>
+  );
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(FilterLink);

@@ -7,7 +7,7 @@ import store from './Components/store/store';
 
 
 
-
+//wrapped our App with Provider and have passed store as prop to the Provider!
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

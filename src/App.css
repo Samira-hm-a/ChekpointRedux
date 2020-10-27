@@ -1,8 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
+/* * { */
+    /* margin: 0; */
+    /* padding: 0;
     box-sizing: border-box;
-  }
+    @import 'compass'
+    *,
+    *:before,
+    *:after
+      +box-sizing(border-box)
+  } */
   body {
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     color: white;
@@ -10,12 +15,21 @@
     min-height: 100vh;
     
   }
+  .backgroundph {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 570px;
+    padding-top: 60px;
+  }
+
   /*content*/
  
   .content , h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
   }
   form {
@@ -25,29 +39,71 @@
     align-items: center;
   }
   form input,
-form button {
-  padding: 0.5rem;
-  font-size: 2rem;
-  border: none;
-  background: white;
+  form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+  }
+  form button {
+    color: #ff6f47;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: #ff6f47;
+    color: white;
+  }
+  .todo-container {
+    display:flex;
+    flex-direction: row;
+    width:400px;
+    margin-left:440px;
+    margin-top:0px;
+    margin-bottom:20px;
+    justify-content: space-between;
+    border-left: 4px solid #f6d365;
+    padding: 3px;
+    cursor:pointer;
+    caption-side: bottom;
+    line-height: 2em;
+
+    }
+  
+  .totask-item__text--completed {
+    text-decoration: line-through;
+    color:white;
+  }
+  .btn {
+    padding: 1rem;
+    font-size: 1rem; 
+    border: none;
+    background: #ff6f47;
+    display: inline-block;
+    position: relative;
+    text-align:center;
+    left:35%; 
+    border-radius: 8px;
+     
 }
-form button {
-  color: #ff6f47;
-  background: #f7fffe;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-form button:hover {
-  background: #ff6f47;
-  color: white;
-}
-.todo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .btn i {
+     padding:4px;
   }
   
-  .todo-list {
-    min-width: 30%;
-    list-style: none;
-  }
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+/*Ediiiiiit*/
+.edit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100px;
+    border:#f6d365
+}
+.edit, input {
+      display:block;
+      align-items: center;
+}
